@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap');
+
+
+.logo {
+        text-align: center;
+        font-size: 300%;
+        width: 100%;
+        margin: 10px auto;
+        font-family: 'Major Mono Display', monospace;
+    }
+
+.logo span {
+        color: #A5243D;
+    }
+
+.todolist {
+    text-align: center; margin: 50px auto;
+        input {
+            padding: 10px; border: none; background-color: black; color: white; transition: background-color .4s;
+        }
+        input[type="submit"]:hover {background-color: #A5243D;}
+}
+
+.list {
+    text-align: center; list-style: none; padding: 0px;
+
+        li {
+            background-color: #A5243D; color: white; padding: 10px; max-width: 500px; margin: 10px auto;
+        }
+        button {
+            padding: 10px; border: none; background-color: black; color: white; transition: background-color .4s, color .4s; margin: 0 20px;
+        }
+        button:hover {background-color: white; color: black;}
+}
+
+footer { text-align: center; font-weight: 900; margin: 50px auto;}
+
+@media only screen and (max-width: 500px) {
+    .logo {
+            text-align: center;
+            font-size: 200%;
+            width: 100%;
+            margin: 10px auto;
+            font-family: 'Major Mono Display', monospace;
+        }
+}
