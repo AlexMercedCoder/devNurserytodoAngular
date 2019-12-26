@@ -12,7 +12,7 @@
         <li *ngFor="let todo of todos; index as index; trackBy:trackByFn">{{todo.entry}} <button (click)="removeTodo(index,todo.id)">Complete</button></li>
     </ul>
     </div>
-    <h1>IF YOU SEE THIS, YOU ARE NOT LOGGED IN, LOGIN AT devNursery.com BLOGGING SECTION</h1>
+    <h1 *ngIf="!loggedIN">IF YOU SEE THIS, YOU ARE NOT LOGGED IN, LOGIN AT devNursery.com BLOGGING SECTION</h1>
     <footer>Application Made by Alex Merced of AlexMerced.com using Go/Buffalo/Angular 8</footer>
 
 
@@ -25,7 +25,3 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-
-
-<router-outlet></router-outlet>
